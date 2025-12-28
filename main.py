@@ -11,9 +11,7 @@ def main():
 
     dataframe = pandas.DataFrame(tableformatteddict)
 
-    new_index_labels = createnewindexlabels(data)
-
-    dataframe.index = new_index_labels
+    dataframe.index = createnewindexlabels(data)
 
     print(dataframe.transpose())
 
